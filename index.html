@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pet</title>
+</head>
+<body>
+
+    <h1>Cadastro de Pet</h1>
+    
+    <form action="/submit_pet" method="POST">
+        <label for="nome">Nome do Pet:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+        
+        <label for="tipo">Tipo de Animal:</label><br>
+        <select id="tipo" name="tipo" required>
+            <option value="">Selecione</option>
+            <option value="cachorro">Cachorro</option>
+            <option value="gato">Gato</option>
+            <option value="pássaro">Pássaro</option>
+            <option value="outro">Outro</option>
+        </select><br><br>
+        
+        <label for="raca">Raça:</label><br>
+        <input type="text" id="raca" name="raca" required><br><br>
+
+        <label for="idade">Idade:</label><br>
+        <input type="number" id="idade" name="idade" required><br><br>
+
+        <label for="descricao">Descrição:</label><br>
+        <textarea id="descricao" name="descricao" rows="4"></textarea><br><br>
+        
+        <button type="submit">Cadastrar Pet</button>
+    </form>
+
+</body>
+</html>
